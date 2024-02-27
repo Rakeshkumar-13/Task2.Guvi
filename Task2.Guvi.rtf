@@ -1,0 +1,121 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2759
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 ArialMT;\f1\fswiss\fcharset0 Arial-BoldMT;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid101\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid2}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}}
+\paperw11900\paperh16840\margl1440\margr1440\vieww28600\viewh15060\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\qj\partightenfactor0
+\cf0 																							
+\f1\b 	TASK
+\f0\b0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+-Blog on difference between  Document Object vs. Window Object in JavaScript\
+\
+\
+\pard\tx220\tx720\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li720\fi-720\pardirnatural\partightenfactor0
+\ls1\ilvl0\cf0 {\listtext	\uc0\u8226 	}JavaScript, being the backbone of interactive web development, relies on objects to manipulate the Document Object Model (DOM) and interact with the browser environment. Two pivotal objects in this ecosystem are the Document and Window objects. Despite their intertwined roles, these objects play distinct functions. In this blog, we'll delve into the differences between the Document and Window objects in JavaScript.\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\b \cf0 Understanding the Document Object:
+\f0\b0 \
+\
+The Document object is a core component of the DOM, serving as a representation of the loaded HTML document. It acts as an interface for developers to dynamically manipulate the content, structure, and style of the document. Here are some key aspects of the Document object:\
+\
+1. 
+\f1\b Element Manipulation:
+\f0\b0 \
+   - 
+\f1\b `document.getElementById('elementId')`:
+\f0\b0  Locates and returns a reference to an HTML element with the specified ID.\
+   - 
+\f1\b `document.createElement('tagName')`:
+\f0\b0  Creates a new HTML element with the specified tag name.\
+   - 
+\f1\b `document.querySelector('selector')`:
+\f0\b0  Returns the first element that matches the specified CSS selector.\
+\
+2. 
+\f1\b Document Metadata:
+\f0\b0 \
+   - 
+\f1\b `document.title`: 
+\f0\b0 Represents the title of the document.\
+   - 
+\f1\b `document.head`:
+\f0\b0  References the head element of the document.\
+   - 
+\f1\b `document.body`:
+\f0\b0  Represents the body element of the document.\
+\
+
+\f1\b Understanding the Window Object:
+\f0\b0 \
+\
+In contrast, the Window object represents the browser window or tab that contains the document. It acts as the global object in the browser environment, providing methods and properties related to the window. Key features of the Window object include:\
+\
+1. 
+\f1\b Window Dimensions:
+\f0\b0 \
+   - 
+\f1\b `window.innerWidth` 
+\f0\b0 and
+\f1\b  `window.innerHeight`:
+\f0\b0  Provide the inner width and height of the browser window, excluding toolbars and scrollbars.\
+   - 
+\f1\b `window.outerWidth` 
+\f0\b0 and
+\f1\b  `window.outerHeight`:
+\f0\b0  Give the outer width and height of the browser window, including toolbars and scrollbars.\
+\
+2. 
+\f1\b Navigation and Location:
+\f0\b0 \
+   - 
+\f1\b `window.location`:
+\f0\b0  Contains information about the URL of the document.\
+   - 
+\f1\b `window.open('url', 'name', 'features')`:
+\f0\b0  Opens a new browser window or tab with the specified URL, name, and features.\
+\
+3. 
+\f1\b Global Methods:
+\f0\b0 \
+   - 
+\f1\b `window.alert('message')`:
+\f0\b0  Displays an alert dialog box with the specified message.\
+   - 
+\f1\b `window.confirm('question')`:
+\f0\b0  Prompts the user with a confirmation dialog containing the specified question.\
+\
+
+\f1\b Distinguishing Factors:
+\f0\b0 \
+\
+1. 
+\f1\b Scope:
+\f0\b0 \
+   - The Document object operates within the confines of the loaded HTML document.\
+   - The Window object encompasses the entire browser window or tab and extends its functionalities beyond the document.\
+\
+2. 
+\f1\b Hierarchy:
+\f0\b0 \
+   - The Window object encapsulates the Document object. Accessing `window.document` provides a reference to the Document object for the current window.\
+\
+3. 
+\f1\b Functionality:
+\f0\b0 \
+   - The Document object specializes in manipulating HTML elements and content.\
+   - The Window object deals with broader functionalities, including window dimensions, navigation, and global methods.\
+\
+\
+\pard\tx220\tx720\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li720\fi-720\pardirnatural\partightenfactor0
+\ls2\ilvl0\cf0 {\listtext	\uc0\u8226 	}In conclusion, comprehending the roles and distinctions between the Document and Window objects is vital for JavaScript developers. While the Document object focuses on the content and structure of the loaded HTML document, the Window object provides a broader set of functionalities related to the browser environment. A nuanced understanding of these objects empowers developers to create dynamic, responsive, and feature-rich web applications.}
